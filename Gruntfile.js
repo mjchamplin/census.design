@@ -6,8 +6,7 @@ module.exports = function(grunt) {
           // outputStyle: 'expanded'
         },
         files: {                         // Dictionary of files
-          'assets/css/main.css': 'assets/css/main.sass',       // 'destination': 'source'
-          'assets/css/reset.css': 'assets/css/reset.sass'
+          'assets/css/main.css': 'assets/css/main.sass'       // 'destination': 'source'
         }
       },
       build: {
@@ -15,8 +14,7 @@ module.exports = function(grunt) {
           //outputStyle: 'compact'
         },
         files: {
-          'docs/assets/css/main.css': 'assets/css/main.sass',
-          'assets/css/reset.css': 'assets/css/reset.sass'
+          'docs/assets/css/main.css': 'assets/css/main.sass'
         }
       }
     },
