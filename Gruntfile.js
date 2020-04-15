@@ -63,6 +63,12 @@ module.exports = function(grunt) {
         src: ['**/*.pdf'],
         dest: 'docs/assets/pdf',
         expand: true
+      },
+      svgs: {
+        cwd: 'assets/img/',
+        src: ['**/*.svg'],
+        dest: 'docs/assets/img',
+        expand: true
       }
     },
 
