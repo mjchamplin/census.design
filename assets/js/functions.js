@@ -1,1 +1,1 @@
-new LuminousGallery(document.querySelectorAll(".downloads"));
+//new SimpleLightbox({elements: '.item a'});

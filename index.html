@@ -17,9 +17,10 @@
       <meta property="og:type" content="">
       <!-- The Goods -->
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@531&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="assets/css/main.css">
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <link rel="stylesheet" href="assets/css/simpleLightbox.min.css" />
 
-      <script src="assets/js/luminous.min.js"></script>
+      <script src="assets/js/simpleLightbox.min.js"></script>
       <script src="assets/js/functions.js"></script>
     </head>
     <body>
@@ -56,13 +57,17 @@
       </header>
       <div class='grid'>
         <div class='item'>
-          <img src='https://placekitten.com/500/300' style='width: 100%'>
+          <a class='lightbox' href='https://placekitten.com/1000/600'>
+            <img src='https://placekitten.com/500/300' style='width: 100%'>
+          </a>
           <p class='title'>A Flyer Name</p>
           <p class='size'>8.5 x 11</p>
           <a href='#' class='download'>Download</a>
         </div>
         <div class='item'>
-          <img src='https://placekitten.com/500/300' style='width: 100%'/>
+          <a class='lightbox' href='https://placekitten.com/1000/600'>
+            <img src='https://placekitten.com/500/300' style='width: 100%'/>
+          </a>
           <p class='title'>
             two
           </p>
@@ -95,8 +100,12 @@
     </section>
   </div>
 </main>
+<script>
+var lightbox = new SimpleLightbox({
+    elements: document.querySelectorAll('.item a')
+});
 
-
+</script>
         <!-- Google Analytics script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

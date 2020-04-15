@@ -1,8 +1,13 @@
 html
-  -webkit-font-smoothing: antialiased
-body
   font-family: $sans-serif
   font-variation-settings: 'wght' 300
+  color: $black
+  font-size: 16px
+  @media screen and (min-width: 600px)
+    font-size: 16px
+  @media screen and (min-width: 1024px)
+    font-size: 18px
+
 h1
   font-size: 4rem
   text-align: center
@@ -10,7 +15,6 @@ h1
 
 a
   transition: color, font-variation-settings .2s ease-out
-
 
 .green
   color: $green

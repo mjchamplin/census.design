@@ -2,29 +2,16 @@
 @import 'settings'
 @import 'typography'
 @import 'grid'
-
-// color variables
-$white: #ffffff
-$black: #111111
-
-// font variables
-$lust: '', serif
-$acumin: '', sans-serif
-
-body
-  color: $black
-  font-size: 16px
-  @media screen and (min-width: 600px)
-    font-size: 16px
-  @media screen and (min-width: 1024px)
-    font-size: 18px
+@import 'simpleLightbox.min.css'
 #hero
   width: 100%
   min-height: 300px
   padding: 4rem 0
   background-color: $green
-  font-size: 38px
-  color: $white
+  p
+    font-size: 2.375rem
+    color: $white
+
 #step-one, #step-two
   width:100%
   padding: 1rem 0
@@ -71,9 +58,11 @@ header.logo
   display: block
   margin: 10rem auto
   text-align: center
+  img
+    width: 100%
+    max-width: 600px
 
 #top-bar
-  //height: 2rem
   width: 100%
   background: $black
   color: $white

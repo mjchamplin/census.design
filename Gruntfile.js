@@ -69,13 +69,20 @@ module.exports = function(grunt) {
         src: ['**/*.svg'],
         dest: 'docs/assets/img',
         expand: true
+      },
+      css: {
+        cwd: 'assets/css/',
+        src: ['**/simpleLightbox.min.css'],
+        dest: 'docs/assets/css',
+        expand: true
       }
     },
 
     uglify: {
       build: {
         files: {
-          'docs/assets/js/functions.js': ['assets/js/functions.js']
+          'docs/assets/js/functions.js': ['assets/js/functions.js'],
+          'docs/assets/js/simpleLightbox.min.js': ['assets/js/simpleLightbox.min.js']
         }
       }
     },
