@@ -11,12 +11,9 @@ $black: #111111
 $lust: '', serif
 $acumin: '', sans-serif
 
-html
-  -webkit-font-smoothing: antialiased
-
 body
   color: $black
-  font-size: 14px
+  font-size: 16px
   @media screen and (min-width: 600px)
     font-size: 16px
   @media screen and (min-width: 1024px)
@@ -24,13 +21,70 @@ body
 #hero
   width: 100%
   min-height: 300px
+  padding: 4rem 0
   background-color: $green
+  font-size: 38px
+  color: $white
+#step-one, #step-two
+  width:100%
+  padding: 1rem 0
+  color: $white
+  a
+    color: $white
+  a:hover
+    font-variation-settings: 'wght' 600
 
-.container
-  width: 100%
-  max-width: 940px
-  margin: 0 auto
+#step-one
+  background-color: $green-85
+#step-two
+  background-color: $green-70
 
+#main-content
+  padding: 5rem 0
+
+.downloads
+  h1
+    font-size: 2rem
+    text-align: left
+    padding: 0
+    margin: 1rem 0
+  header
+    display: block
+    width: 100%
+    border-bottom: 2px solid $off-black
+    margin-bottom: 2rem
 .item
+  text-align: center
   .title
-    text-align: center
+    font-size: 1.2rem
+    margin: .5em 0 0
+  .size
+    font-size: .8rem
+    color: $dark-gray
+    margin: .35rem
+  a.download
+    color: $green
+    transition: color .2s ease-out
+    font-variation-settings: 'wght' 600
+
+header.logo
+  display: block
+  margin: 10rem auto
+  text-align: center
+#top-bar
+  //height: 2rem
+  width: 100%
+  background: $black
+  color: $white
+  margin: 0
+  padding: 1rem
+  text-align: center
+  box-sizing: border-box
+  p
+    margin: 0
+    padding: 0
+  a
+    color: $white
+    transition: color .2s ease-out
+  a:hover
+    color: $green
