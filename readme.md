@@ -4,3 +4,7 @@ A place for designers to submit printable flyers, posters etc to help increase t
 
 by [@mjchamplin](https://github.com/mjchamplin)
 thanks to [@melodykramer](https://github.com/melodykramer) for the idea.
+
+
+## Dependencies:
+- [Simple Lightbox](https://dbrekalo.github.io/simpleLightbox/)
