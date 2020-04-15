@@ -81,7 +81,6 @@ module.exports = function(grunt) {
     uglify: {
       build: {
         files: {
-          'docs/assets/js/functions.js': ['assets/js/functions.js'],
           'docs/assets/js/simpleLightbox.min.js': ['assets/js/simpleLightbox.min.js']
         }
       }
