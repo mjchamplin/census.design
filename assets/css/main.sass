@@ -3,6 +3,24 @@
 @import 'typography'
 @import 'grid'
 @import 'simpleLightbox.min.css'
+
+#top-bar
+  width: 100%
+  background: $black
+  color: $white
+  margin: 0
+  padding: 1rem
+  text-align: center
+  box-sizing: border-box
+  p
+    margin: 0
+    padding: 0
+  a
+    color: $white
+    transition: color .2s ease-out
+  a:hover
+    color: $green
+
 #hero
   width: 100%
   min-height: 300px
@@ -62,13 +80,13 @@ header.logo
     width: 100%
     max-width: 600px
 
-#top-bar
+#footer
   width: 100%
+  min-height: 18rem
   background: $black
   color: $white
   margin: 0
-  padding: 1rem
-  text-align: center
+  padding: 4rem 0
   box-sizing: border-box
   p
     margin: 0

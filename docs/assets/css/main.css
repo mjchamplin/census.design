@@ -25,7 +25,7 @@ body {
 html {
   font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-variation-settings: "wght" 300;
-  color: #111111;
+  color: #242424;
   font-size: 16px;
 }
 @media screen and (min-width: 600px) {
@@ -64,8 +64,40 @@ a {
   grid-auto-rows: minmax(100px, auto);
 }
 
-#grid-two > div {
-  background-color: #ccc;
+.two-column-grid {
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+  grid-gap: 80px 40px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.two-column-grid div {
+  background-color: #ffffff;
+}
+@media screen and (min-width: 1024px) {
+  .two-column-grid div {
+    background-color: #00a678;
+  }
+}
+
+#top-bar {
+  width: 100%;
+  background: #242424;
+  color: #ffffff;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+#top-bar p {
+  margin: 0;
+  padding: 0;
+}
+#top-bar a {
+  color: #ffffff;
+  transition: color 0.2s ease-out;
+}
+#top-bar a:hover {
+  color: #00a678;
 }
 
 #hero {
@@ -144,24 +176,24 @@ header.logo img {
   max-width: 600px;
 }
 
-#top-bar {
+#footer {
   width: 100%;
-  background: #111111;
+  min-height: 18rem;
+  background: #242424;
   color: #ffffff;
   margin: 0;
-  padding: 1rem;
-  text-align: center;
+  padding: 4rem 0;
   box-sizing: border-box;
 }
-#top-bar p {
+#footer p {
   margin: 0;
   padding: 0;
 }
-#top-bar a {
+#footer a {
   color: #ffffff;
   transition: color 0.2s ease-out;
 }
-#top-bar a:hover {
+#footer a:hover {
   color: #00a678;
 }
 

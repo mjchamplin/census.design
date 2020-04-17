@@ -100,7 +100,6 @@ module.exports = function(grunt) {
           showProgress: true,
           srcBasePath: "docs/",
           destBasePath: "public_html/",
-          //createDirectories: true
         }
       }
     },
